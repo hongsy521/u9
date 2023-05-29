@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+
+    </article>
+    <input type="button" value="fetch" onclick="
+    /*fetch('index.html').then(function(response){   //fetch괄호 안 html파일 서버에 요청
+        response.text().then(function(text){  //text변수 안에 서버가 응답한 데이터가 저장되어있음
+          document.querySelector('article').innerHTML = text; 
+           //서버에서 응답이 끝나면 text변수 안에 담긴 데이터 article에 담겨서 반환
+        })
+      })*/ 
+        fetch('index.html').then(function(response){
+            if(response.status=='404'){
+                alert('Not found');
+            }
+        });
+        console.log(1);
+        console.log(2);
+      ">
+</body>
+</html>
